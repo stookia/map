@@ -1,1 +1,56 @@
+.map{
+	position: relative;
+}
 
+.map a#col1{
+	position: absolute;
+	top: 980px;
+	left: 640px;
+}
+.map a#col2{
+	position: absolute;
+	top: 1460px;
+	left: 995px;
+}
+
+
+.map img{
+	width: 1044px;
+	height: 1768px;
+}
+
+.spot{
+ margin: 10px;
+ padding: 10px;
+ border: 1px solid #ddd;
+}
+
+.count{
+  font-size:20pt;
+}
+
+.pin {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  position: relative;
+  width: 1.6em;
+  height: 1.6em;
+  background: currentColor;
+  border: 0.1em solid currentColor;
+  border-radius: 40% 60% 0% 100% / 40% 100% 0% 60%;
+  box-sizing: content-box;
+  transform: rotate(45deg);
+}
+
+.pin::before {
+  content: '';
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  width: 0.672em;
+  height: 0.672em;
+  background: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
