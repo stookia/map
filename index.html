@@ -12,7 +12,14 @@
 		<a id="col2" class="pin" style="color:#000000" href="https://stookia.github.io/home2/"></a>
 		<img src="map.svg">
 	</div>
-	
+	<script>
+      		document.addEventListener("DOMContentLoaded", function (){
+	　　	const col1=localStorage.getItem("col1")||"color:#000000";
+        　	const col2=localStorage.getItem("col2")||"color:#000000";
+	  	if(col1 !=="color:#000000"){document.getElementById('col1').style=col1;}
+        　　	if(col2 !=="color:#000000"){document.getElementById('col2').style=col2;}
+		});
+    	</script>
 </body>
 </html>
 
